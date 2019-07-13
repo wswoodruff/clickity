@@ -6,6 +6,11 @@
 
 Get a new page reference
 
+**IMPORTANT**
+You will have a memory leak if you don't close the page you get from this func.
+
+When you're finished, call `await page.close();`
+
 ### goto(page, url)
 
 Use an existing page to goto a url
