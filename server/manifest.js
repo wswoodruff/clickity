@@ -31,7 +31,9 @@ module.exports = new Confidence.Store({
         plugins: [
             {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    devTools: process.env.DEVTOOLS === '1'
+                }
             },
             {
                 plugin: {
