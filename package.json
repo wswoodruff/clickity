@@ -9,6 +9,13 @@
     "lib": "lib",
     "test": "test"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@wswoodruff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wswoodruff/clickity.git"
+  },
   "scripts": {
     "start": "node server",
     "test": "lab -a @hapi/code -L",
